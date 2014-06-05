@@ -3,6 +3,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <style type="text/css">
+body {
+  /* ### Override UA colors because we use :target{background-color} later, and
+     ### there is no way to derive a UA-colors-compatible color for that use. */ 
+  color: black;
+  background-color: white;
+}
+:target {
+  /* Highlight the selected anchor. */
+  background-color: #e8e8e8;
+/*
+  margin-left: 2em;
+*/
+}
 .title {
   font-size: 105%;
 }
