@@ -45,8 +45,8 @@ with
 <a href="http://www.cs.bu.edu/~canetti/">Ran Canetti</a>
 and
 <a href="http://www.dblp.org/pers/hc/v/Vald:Margarita.html">Margarita Vald</a>.
-Submitted for publication,
-2014.
+To appear in
+<a href="http://troll.iis.sinica.edu.tw/pkc16/papers.shtml"><acronym title="IACR 19th International Conference on the Theory and Practice of Public-Key Cryptography">PKC&nbsp;2016</acronym></a>.
 <a href="#CSV14:AuthnPKI" class="selflink">&para;</a>
 </p>
 
@@ -58,14 +58,14 @@ may be more up-to-date than this version.</em>
 <p>Abstract:</p>
 <blockquote class="abstract">
 <p>
-Message authentication is one of the most basic tasks of cryptography, and authentication based on public-key infrastructure (PKI) is one of the most prevalent methods for message and entity authentication.  Still, the state of the art in composable security analysis of PKI-based authentication is somewhat unsatisfactory. Specifically, existing treatments either (a)&nbsp;make the unrealistic assumption that the PKI is accessible only within the confines of  the authentication protocol itself, thus failing to capture real-world PKI-based authentication,  or (b)&nbsp;impose often-unnecessary  requirements&mdash;such as strong on-line non-transferability&mdash;on candidate protocols, thus ruling out natural candidates.
+Message authentication and key exchange are two of the most basic tasks of cryptography and are often basic components in complex and security-sensitive protocols. Thus composable security analysis of these primitives is highly motivated.  Solutions based are prevalent.  Still, the state of the art in composable security analysis of these primitives is somewhat unsatisfactory in the prevalent case where solutions are based on public-key infrastructure (PKI).  Specifically, existing treatments either (a)&nbsp;make the unrealistic assumption that the PKI is accessible only within the confines of the protocol itself, thus failing to capture real-world PKI-based authentication, or (b)&nbsp;impose often-unnecessary requirements&mdash;such as strong on-line non-transferability&mdash;on candidate protocols, thus ruling out natural candidates.
 </p>
 
 <p>
-We give a modular and composable analytical framework for PKI-based message authentication protocols. This framework 
-guarantees security even when the PKI is pre-existing and globally available,  without being unnecessarily restrictive.  
-Specifically, we model PKI as a global set-up functionality within the <em>Global&nbsp;UC</em> security model  [<a href="http://eprint.iacr.org/2006/432">Canetti <em>et al.</em>,
-TCC 2007</a>] and relax the ideal authentication functionality accordingly. We then demonstrate the security of a simple signature-based authentication protocol. Our modeling makes minimal security assumptions on the PKI in use; in particular, "knowledge of the secret key" is not  guaranteed or verified. To enable our treatment, we formulate two new composition theorems.
+We give a modular and universally composable analytical framework for PKI-based message authentication and key exchange protocols. This framework
+guarantees security even when the PKI is pre-existing and globally available, without being unnecessarily restrictive.
+Specifically, we model PKI as a global set-up functionality within the <em>Global&nbsp;UC</em> security model [<a href="http://eprint.iacr.org/2006/432">Canetti <em>et al.</em>,
+TCC 2007</a>] and relax the ideal authentication and key exchange functionalities accordingly.  We then demonstrate the security of basic signature-based authentication and key exchange protocols. Our modeling makes minimal security assumptions on the PKI in use; in particular, "knowledge of the secret key" is not needed.  Furthermore, there is no requirement of uniquenss in this binding: an identity may be represented by multiple strings of public keys.
 </p>
 
 </blockquote>
@@ -75,6 +75,7 @@ TCC 2007</a>] and relax the ideal authentication functionality accordingly. We t
 <dd>public-key infrastructure</dd>
 <dd>message authentication</dd>
 <dd>digital signatures</dd>
+<dd>key exchange</dd>
 <dd>deniability</dd>
 <dd>non-transferability</dd>
 <dd>universal composability</dd>
